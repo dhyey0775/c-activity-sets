@@ -1,0 +1,16 @@
+git add .
+git commit -m "test"
+cd set01
+gcc -g -O0 problem02.c -o problem02.exe
+gcc a.out
+gcc problem02.exe
+quit
+dir
+gcc -g -O0 .\problem02.c -o problem02.exe
+gdb .\problem02.exe
+gdb(commands)
+(gdb) b main
+(gdb) r
+(gdb) n
+(gdb) q
+git push  

@@ -7,7 +7,7 @@ gcc problem02.exe
 quit
 dir
 gcc -g -O0 .\problem02.c -o problem02.exe
-gdb .\problem02.exe
+gdb .\problem02.exe 
 gdb(commands)
 (gdb) b main
 (gdb) r

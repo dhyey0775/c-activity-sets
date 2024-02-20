@@ -1,12 +1,12 @@
 git add .
 git commit -m "test"
 cd set01
-gcc -g -O0 problem06.c -o problem06.exe
+gcc -g -O0 problem07.c -o problem07.exe
 gcc a.out
-gcc problem06.exe
+gcc problem07.exe
 quit
 dir
-gcc -g -O0 .\problem06.c -o problem06.exe
+gcc -g -O0 .\problem07.c -o problem07.exe
 gdb .\problem06.exe 
 gdb(commands)
 (gdb) b main

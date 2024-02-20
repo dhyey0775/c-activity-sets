@@ -1,0 +1,33 @@
+gdb .\problem06.exe 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+.\problem06.exe: No such file or directory.
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) r
+Please answer y or [n].
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 1 (main) pending.
+(gdb) r
+Starting program:
+No executable specified, use `target exec'.
+(gdb) n
+The program is not being run.
+(gdb) q
+PS E:\PSC_sem2\c-activity-sets> git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.52 KiB | 35.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+To https://github.com/dhyey0775/c-activity-sets
+   9d6aa43..3d00a38  main -> main

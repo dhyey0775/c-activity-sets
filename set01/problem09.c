@@ -7,7 +7,7 @@ int main()
 {
     float n= input()
     float sqrt=square_root(n);
-    output(n,sqrt);
+    output(n,sqrroot);
     return 0;
 }
 

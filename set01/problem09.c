@@ -1,37 +1,38 @@
 #include <stdio.h>
+
 float input();
 float square_root(float n);
 void output(float n, float sqrroot);
 
-int main()
-{
-    float n= input()
-    float sqrt=square_root(n);
-    output(n,sqrroot);
-    return 0;
-}
-
 float input()
 {
-    int n; 
-    printf("enter a number :");
-    scanf("%d" , &n);
-    return n;
+    float num;
+    printf("Enter a number:");
+    scanf("%f",&num);
+    return num;
 }
 
 float square_root(float n)
 {
-    float x_old=1 , y_new=n/2;
-    float xy = 0.000001;
-    while(fabs(y_new-x_old)>xy)
+    float error = 0.00001;
+    float s=n;
+
+    while ((s-n/s)>error)
     {
-        x_old=y_new;
-        y_new = 0.5*(x_old + n/x_old);
+        s=(s+n/s)/2;
     }
-    return y_new;
+    return s;
 }
 
 void output(float n, float sqrroot)
 {
-    print("The square root of %f is %f",n,sqrroot);
+    printf("The square root of %.2f is %.2f\n",n,sqrroot);
+}
+
+int main()
+{
+    float n = input();
+    float sqrroot = square_root(n);
+    output(n,sqrroot);
+    return 0;
 }

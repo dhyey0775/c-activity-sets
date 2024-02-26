@@ -1,0 +1,39 @@
+ gdb .\problem11.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from E:\PSC_sem2\c-activity-sets\set01\problem11.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40150e: file .\problem11.c, line 25.
+(gdb) r
+Starting program: E:\PSC_sem2\c-activity-sets\set01/.\problem11.exe
+[New Thread 16880.0x49d4]
+[New Thread 16880.0x2748]
+
+Breakpoint 1, main () at .\problem11.c:25
+25          a = input_complex();
+(gdb) n
+enter the real and imaginary part respectively: 33
+33
+26          b = input_complex();
+(gdb) n
+enter the real and imaginary part respectively: 33
+33
+27          sum = add_complex(a,b);
+(gdb) n
+28          output(a,b,sum);
+(gdb) 33
+Undefined command: "33".  Try "help".
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 16880] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5

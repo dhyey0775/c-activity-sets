@@ -1,0 +1,55 @@
+gcc -g -O0 .\problem02.c -o problem02.exe
+PS E:\PSC_sem2\c-activity-sets\set02> gdb .\problem02.exe 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from E:\PSC_sem2\c-activity-sets\set02\problem02.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401514: file .\problem02.c, line 30.
+(gdb) r
+Starting program: E:\PSC_sem2\c-activity-sets\set02/.\problem02.exe
+[New Thread 14128.0x3b54]
+[New Thread 14128.0x4cd4]
+
+Breakpoint 1, main () at .\problem02.c:30
+30          a=input_side();
+(gdb) n
+enter the sides of the triangle
+2
+31          b=input_side();
+(gdb) n
+enter the sides of the triangle
+4
+32          c=input_side();
+(gdb) n
+enter the sides of the triangle
+5
+34          isscalene=check_scalene(a,b,c);
+(gdb) n
+35          output(a,b,c,isscalene);
+(gdb) n
+The triangle with sides 2,4 and 5 is scalene36      return 0;
+(gdb) n
+37      (gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128f in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 14128] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
